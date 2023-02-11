@@ -1,0 +1,103 @@
+body {
+  margin: 0px;
+  height: 100vh;
+  background-color: #c4c1c1;
+}
+
+.grid-main {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  justify-items: center;
+  align-items: center;
+  font-size: x-large;
+  color: rgb(159, 21, 159);
+  text-transform: capitalize;
+}
+p,
+h1 {
+  padding: 20px;
+}
+h1 {
+  color: rgb(195, 63, 63);
+}
+p {
+  color: rgb(93, 11, 70);
+}
+.grid-main div {
+  justify-items: center;
+  align-items: center;
+}
+.header1 {
+  grid-column: 1/2;
+  grid-row: 1/3;
+}
+.header2 {
+  grid-column: 2/3;
+  grid-row: 1/3;
+}
+.header3 {
+  grid-column: 3/4;
+  grid-row: 1/3;
+}
+.header4 {
+  grid-column: 4/5;
+  grid-row: 1/3;
+}
+section {
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  height: 100%;
+  width: 70%;
+  display: grid;
+  margin: 0 auto;
+  gap: 2px;
+  border: 1px solid rgb(211, 141, 11);
+}
+.grid-main {
+  grid-column: 1/-1;
+  grid-row: 1/3;
+  background-image: url(images/BAJ.jpeg);
+}
+
+.about {
+  background-image: url(images/Huawei.jpg);
+  grid-column: 1/3;
+  grid-row: 3/5;
+}
+.info {
+  background-image: url(images/mi.jpg);
+  grid-column: 3/-1;
+  grid-row: 3/5;
+}
+.cards {
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  display: grid;
+  grid-column: 1/-1;
+}
+.card1 {
+  background-image: url(images/g3.jpeg);
+
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+.card2 {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  background-image: url(images/g1.jpeg);
+}
+.card3 {
+  background-image: url(images/g2.jpeg);
+  grid-column: 3/4;
+  grid-row: 1/2;
+}
+.card4 {
+  background-image: url(images/g1.jpeg);
+  grid-column: 4/5;
+  grid-row: 1/2;
+}
+.cards h2 {
+  text-align: center;
+  color: midnightblue;
+}
